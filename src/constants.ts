@@ -2,13 +2,56 @@ import { FeedItem, Course, UserStats, Badge } from './types';
 
 export const MOCK_FEED: FeedItem[] = [
   {
+    id: '7',
+    type: 'video',
+    subject: 'physics',
+    title: 'Chute Libre',
+    content: 'Analyse d\'un mouvement de chute libre sans frottements.',
+    author: 'SciencesXpert',
+    likes: 15,
+    videoUrl: 'https://res.cloudinary.com/drkb0wvcj/video/upload/chuteLibre_dmlk72.mp4',
+  },
+  {
+    id: '8',
+    type: 'video',
+    subject: 'physics',
+    title: 'Ascenseur',
+    content: 'Comprendre les forces en jeu dans un ascenseur en mouvement.',
+    author: 'SciencesXpert',
+    likes: 25,
+    videoUrl: 'https://res.cloudinary.com/drkb0wvcj/video/upload/ascenceur_tiktok_zhfbvj.mp4',
+  },
+  {
+    id: '9',
+    type: 'video',
+    subject: 'physics',
+    title: 'Altitude Géo',
+    content: 'Calcul de l\'altitude géopotentielle et ses applications.',
+    author: 'SciencesXpert',
+    likes: 30,
+    videoUrl: 'https://res.cloudinary.com/drkb0wvcj/video/upload/altitudeGeo_z5x7hx.mp4',
+  },
+  {
+    id: '10',
+    type: 'carousel',
+    subject: 'maths',
+    title: 'Exercice & Correction',
+    content: 'Un exercice sur les suites et sa correction détaillée. Slide vers la droite pour voir la solution !',
+    author: 'SciencesXpert',
+    likes: 42,
+    images: [
+      'https://res.cloudinary.com/drkb0wvcj/image/upload/2_1_eyvcl6.png',
+      'https://res.cloudinary.com/drkb0wvcj/image/upload/Tiktok__j_9_xens_1_-3_-by_MaxAI_qifcvi.png'
+    ],
+  },
+  {
     id: '1',
     type: 'video',
     subject: 'maths',
     title: 'La Dérivée Intuitive',
     content: 'Découvre comment la pente d\'une courbe définit la variation instantanée. Un concept clé pour la Terminale S.',
-    author: 'Jean-Math',
-    likes: 1240,
+    author: 'SciencesXpert',
+    likes: 1240, //Faire en sorte de faire un truc dynamique pour la suite 
     videoUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
   },
   {
@@ -26,7 +69,7 @@ export const MOCK_FEED: FeedItem[] = [
     subject: 'chemistry',
     title: 'L\'Or est Inoxydable',
     content: 'Sais-tu pourquoi l\'or est si précieux ? Sa structure atomique le rend presque totalement insensible à l\'oxydation.',
-    author: 'Chemix',
+    author: 'SciencesXpert',
     likes: 890,
   },
   {
@@ -35,7 +78,7 @@ export const MOCK_FEED: FeedItem[] = [
     subject: 'maths',
     title: 'Loi Binomiale',
     content: 'Comment calculer la probabilité de k succès parmi n expériences indépendantes. Un must pour le Bac.',
-    author: 'Proba-Pro',
+    author: 'SciencesXpert',
     likes: 450,
   },
   {
@@ -44,7 +87,7 @@ export const MOCK_FEED: FeedItem[] = [
     subject: 'physics',
     title: 'Les Lois de Kepler',
     content: 'Comprendre le mouvement des planètes autour du Soleil. Les orbites ne sont pas des cercles !',
-    author: 'Astro-Guy',
+    author: 'SciencesXpert',
     likes: 1560,
     videoUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
   },
@@ -54,8 +97,8 @@ export const MOCK_FEED: FeedItem[] = [
     subject: 'physics',
     title: 'Pendule Élastique',
     content: 'Étude du mouvement d\'un système masse-ressort. Énergie cinétique et potentielle.',
-    author: 'Equipe SX',
-    likes: 2450,
+    author: 'SciencesXpert',
+    likes: 2450,  
     videoUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4',
   },
 ];
