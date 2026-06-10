@@ -1,6 +1,6 @@
 export type Subject = 'maths' | 'physics' | 'chemistry';
 
-export type FeedContentType = 'funfact' | 'formula' | 'method' | 'video';
+export type FeedContentType = 'funfact' | 'formula' | 'method' | 'video' | 'carousel';
 
 export interface FeedItem {
   id: string;
@@ -11,6 +11,8 @@ export interface FeedItem {
   author: string;
   likes: number;
   videoUrl?: string;
+  images?: string[]; 
+  //Note pour plus tard : rajouter un attribut pour savoir si l'utilisateur a like
 }
 
 export interface Chapter {

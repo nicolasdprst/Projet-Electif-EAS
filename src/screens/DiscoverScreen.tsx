@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { MOCK_FEED } from '../constants';
 import FeedCard from '../components/FeedCard';
-import { Filter, Monitor, X, Play, Book, Lightbulb, Calculator } from 'lucide-react';
+import { Filter, Monitor, X, Play, Book, Lightbulb, Calculator, Images } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { FeedContentType } from '../types';
 
@@ -19,11 +19,12 @@ export default function DiscoverScreen() {
     { id: 'method', label: 'Démonstrations', icon: Book },
     { id: 'funfact', label: 'Faits Scientifiques', icon: Lightbulb },
     { id: 'formula', label: 'Formules', icon: Calculator },
+    { id: 'carousel', label: 'Carrousels', icon: Images },
   ];
 
   return (
     <div className="relative h-full w-full bg-black">
-      {/* Header Overlay */}
+      {/* bandeau du haut */}
       <div className="absolute left-0 right-0 top-0 z-30 flex items-center justify-end px-6 py-12 pointer-events-none">
          <button 
            onClick={() => setShowFilterMenu(true)}
@@ -33,7 +34,7 @@ export default function DiscoverScreen() {
          </button>
       </div>
 
-      {/* Vertical Feed */}
+      {/* le flux vertical de cartes snap-y */}
       <div className="h-full w-full snap-y overflow-y-scroll scroll-hide bg-black">
         {filteredFeed.length > 0 ? (
           filteredFeed.map((item) => (
@@ -55,7 +56,7 @@ export default function DiscoverScreen() {
         )}
       </div>
 
-      {/* Filter Menu Overlay */}
+      {/* fenetre de filtre overlay tout en bas */}
       <AnimatePresence>
         {showFilterMenu && (
           <>
