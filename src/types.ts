@@ -20,6 +20,8 @@ export interface Chapter {
   title: string;
   description: string;
   isCompleted: boolean;
+  category?: string;
+  icon?: string;
 }
 
 export interface Course {

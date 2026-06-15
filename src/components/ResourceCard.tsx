@@ -4,10 +4,10 @@ import { Course } from '../types';
 
 interface ResourceCardProps {
   course: Course;
-  key?: string;
+  onSelect?: (course: Course) => void;
 }
 
-export default function ResourceCard({ course }: ResourceCardProps) {
+export default function ResourceCard({ course, onSelect }: ResourceCardProps) {
   const subjectColors: Record<string, string> = {
     maths: '#E9E4D1',
     physics: '#E9E4D1',
@@ -23,7 +23,8 @@ export default function ResourceCard({ course }: ResourceCardProps) {
   return (
     <motion.div 
       whileTap={{ scale: 0.98 }}
-      className="group relative flex flex-col overflow-hidden rounded-[32px] border border-primary/10 transition-all bg-[#E9E4D1] shadow-sm pb-2"
+      onClick={() => onSelect?.(course)}
+      className="group relative flex flex-col overflow-hidden rounded-[32px] border border-primary/10 transition-all bg-[#E9E4D1] shadow-sm pb-2 cursor-pointer"
     >
       <div className="relative flex flex-1 flex-col p-5">
         <div className="flex items-start justify-between mb-4">
