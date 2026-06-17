@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import BottomNav from './components/BottomNav';
 import ResourcesScreen from './screens/ResourcesScreen';
 import DiscoverScreen from './screens/DiscoverScreen';
+import ProfileScreen from './screens/ProfileScreen';
 
 type Tab = 'discover' | 'resources' | 'profile';
 
@@ -16,7 +17,7 @@ export default function App() {
       case 'resources':
         return <ResourcesScreen />;
       case 'profile':
-        return <div className="h-full w-full bg-background" />;
+        return <ProfileScreen />;
       default:
         return <DiscoverScreen />;
     }

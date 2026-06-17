@@ -52,7 +52,7 @@ export const MOCK_FEED: FeedItem[] = [
     content: 'Découvre comment la pente d\'une courbe définit la variation instantanée. Un concept clé pour la Terminale S.',
     author: 'SciencesXpert',
     likes: 1240, //Faire en sorte de faire un truc dynamique pour la suite 
-    videoUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+    videoUrl: '',
   },
   {
     id: '2',
@@ -89,7 +89,7 @@ export const MOCK_FEED: FeedItem[] = [
     content: 'Comprendre le mouvement des planètes autour du Soleil. Les orbites ne sont pas des cercles !',
     author: 'SciencesXpert',
     likes: 1560,
-    videoUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
+    videoUrl: '',
   },
   {
     id: '6',
@@ -99,7 +99,7 @@ export const MOCK_FEED: FeedItem[] = [
     content: 'Étude du mouvement d\'un système masse-ressort. Énergie cinétique et potentielle.',
     author: 'SciencesXpert',
     likes: 2450,  
-    videoUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4',
+    videoUrl: '',
   },
 ];
 
@@ -172,7 +172,7 @@ export const MOCK_COURSES: Course[] = [
 ];
 
 export const MOCK_USER_STATS: UserStats = {
-  xp: 1250,
+  xp: 450,
   level: 12,
   streak: 7,
   summariesRead: 45,
