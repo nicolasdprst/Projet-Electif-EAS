@@ -173,7 +173,7 @@ export default function FeedCard({ item }: FeedCardProps) {
         </div>
       )}
 
-      {/* anim de gro coeur kan on like */}
+      {/* anim de coeur énorme quand on like comme sur insta */}
       <AnimatePresence>
         {showHeartOverlay && (
           <motion.div
